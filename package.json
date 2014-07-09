@@ -1,0 +1,29 @@
+{
+  "name": "css-text-overflow",
+  "version": "0.0.1",
+  "homepage": "http://github.com/mrmrs/css-text-overflow",
+  "description": "Css module of single purpose classes for text overflow",
+  "keywords": [
+    "css",
+    "oocss",
+    "",
+    ""
+  ],
+  "css-text-overflow": {
+    "type": "git",
+    "url": "http://github.com/mrmrs/css-text-overflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrmrs/repo/issues",
+    "email": "hi@mrmrs.cc"
+  },
+  "author": {
+    "name": "Adam Morse",
+    "email": "hi@mrmrs.cc",
+    "url": "http://mrmrs.cc"
+  },
+  "contributors": [
+    { "name": "Adam Morse", "email": "hi@mrmrs.cc" }
+  ],
+  "license": "MIT"
+}
