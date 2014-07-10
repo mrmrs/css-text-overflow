@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "text-overflow"
   ],
   "css-text-overflow": {
     "type": "git",
