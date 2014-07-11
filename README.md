@@ -30,7 +30,7 @@ or download the css on github and include in your project.
 .t-double { text-overflow: "…" "…"; }
 .t-i { text-overflow: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .t-clip-ns { text-overflow: clip; }
   .t-ellipsis-ns { text-overflow: ellipsis; }
   .t-dots-ns { text-overflow: "…"; }
@@ -39,7 +39,7 @@ or download the css on github and include in your project.
   .t-i-ns { text-overflow: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .t-clip-m { text-overflow: clip; }
   .t-ellipsis-m { text-overflow: ellipsis; }
   .t-dots-m { text-overflow: "…"; }
@@ -48,7 +48,7 @@ or download the css on github and include in your project.
   .t-i-m { text-overflow: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .t-clip-l { text-overflow: clip; }
   .t-ellipsis-l { text-overflow: ellipsis; }
   .t-dots-l { text-overflow: "…"; }
