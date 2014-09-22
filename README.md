@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-text-overflow)
 ## File Size
 
 1.3K text-overflow.css
-968B text-overflow.min.css
+968B text-overflow.min.css 
+226B minified and gzipped
 
 ## The Code
 ```
