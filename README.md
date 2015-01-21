@@ -20,7 +20,7 @@ View on [npm](https://www.npmjs.org/package/css-text-overflow)
 ## File Size
 
 1.3K text-overflow.css
-968B text-overflow.min.css 
+968B text-overflow.min.css
 226B minified and gzipped
 
 ## The Code
@@ -74,7 +74,7 @@ View on [npm](https://www.npmjs.org/package/css-text-overflow)
 
 The MIT License (MIT)
 
-Copyright (c) 2014 @mrmrs
+Copyright (c) 2015 @mrmrs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
