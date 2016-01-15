@@ -1,15 +1,36 @@
+/*
+   TEXT OVERFLOW
+*/
+.t-clip { text-overflow: clip; }
+.t-ellipsis { text-overflow: ellipsis; }
+.t-dots { text-overflow: "…"; }
+/* Two-value syntax: the first value describes the overflow at the left end of the line,
+                     the second at the right end. Directionality has no influence */
+.t-clip-ellipsis { text-overflow: clip ellipsis; }
+.t-double { text-overflow: "…" "…"; }
+.t-i { text-overflow: inherit; }
+@media screen and (min-width: 48em) {
+ .t-clip-ns { text-overflow: clip; }
+ .t-ellipsis-ns { text-overflow: ellipsis; }
+ .t-dots-ns { text-overflow: "…"; }
+ .t-clip-ellipsis-ns { text-overflow: clip ellipsis; }
+ .t-double-ns { text-overflow: "…" "…"; }
+ .t-i-ns { text-overflow: inherit; }
+}
+@media screen and (min-width:48em) and (max-width: 64em) {
+ .t-clip-m { text-overflow: clip; }
+ .t-ellipsis-m { text-overflow: ellipsis; }
+ .t-dots-m { text-overflow: "…"; }
+ .t-clip-ellipsis-m { text-overflow: clip ellipsis; }
+ .t-double-m { text-overflow: "…" "…"; }
+ .t-i-m { text-overflow: inherit; }
+}
+@media screen and (min-width: 64em) {
+ .t-clip-l { text-overflow: clip; }
+ .t-ellipsis-l { text-overflow: ellipsis; }
+ .t-dots-l { text-overflow: "…"; }
+ .t-clip-ellipsis-l { text-overflow: clip ellipsis; }
+ .t-double-l { text-overflow: "…" "…"; }
+ .t-i-l { text-overflow: inherit; }
+}
 
-  Postprocess tachyons stylesheets
-
-  Usage
-    $ tachyons <input.css>
-
-  Options
-    -m, --minify Minify the output stylesheet
-    --generate-docs Generate documentation for a given module
-    --package The path to the module package to be documented
-
-  Example
-    $ tachyons src/tachyons.css > dist/c.css
-    $ tachyons src/tachyons.css > dist/c.css --minify
-    $ tachyons src/tachyons-type-scale.css --generate-docs --package=./package.json > readme.md
