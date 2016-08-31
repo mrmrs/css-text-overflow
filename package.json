@@ -1,7 +1,7 @@
 {
   "name": "css-text-overflow",
   "style": "text-overflow.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-text-overflow",
   "description": "Css module of single purpose classes for text overflow",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-text-overflow.css > css/css-text-overflow.css && tachyons src/css-text-overflow.css --minify > css/css-text-overflow.min.css && tachyons src/css-text-overflow.css --generate-docs --package=../../package.json > readme.md"
