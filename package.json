@@ -1,7 +1,7 @@
 {
   "name": "css-text-overflow",
   "style": "text-overflow.css",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "http://github.com/mrmrs/css-text-overflow",
   "description": "Css module of single purpose classes for text overflow",
   "keywords": [
