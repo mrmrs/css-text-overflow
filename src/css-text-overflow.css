@@ -14,12 +14,12 @@
 .t-i { text-overflow: inherit; }
 
 @media screen and (min-width: 48em) {
-  .t-clip-ns { text-overflow: clip; }
-  .t-ellipsis-ns { text-overflow: ellipsis; }
-  .t-dots-ns { text-overflow: "…"; }
-  .t-clip-ellipsis-ns { text-overflow: clip ellipsis; }
-  .t-double-ns { text-overflow: "…" "…"; }
-  .t-i-ns { text-overflow: inherit; }
+  .t-clip-s { text-overflow: clip; }
+  .t-ellipsis-s { text-overflow: ellipsis; }
+  .t-dots-s { text-overflow: "…"; }
+  .t-clip-ellipsis-s { text-overflow: clip ellipsis; }
+  .t-double-s { text-overflow: "…" "…"; }
+  .t-i-s { text-overflow: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
