@@ -30,9 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.3.0"
   },
   "scripts": {
-    "start": "tachyons src/css-text-overflow.css > css/css-text-overflow.css && tachyons src/css-text-overflow.css --minify > css/css-text-overflow.min.css && tachyons src/css-text-overflow.css --generate-docs --package=../../package.json > readme.md"
   }
 }
