@@ -1,38 +1,44 @@
 {
   "name": "css-text-overflow",
-  "style": "text-overflow.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-text-overflow",
-  "description": "Css module of single purpose classes for text overflow",
+  "version": "2.0.0",
+  "description": "Functional CSS for text-overflow",
+  "style": "dist/text-overflow.css",
+  "main": "dist/text-overflow.css",
+  "exports": {
+    ".": "./dist/text-overflow.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "text-overflow"
+    "text-overflow",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-text-overflow": {
+  "homepage": "https://github.com/mrmrs/css-text-overflow",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-text-overflow.git"
+    "url": "https://github.com/mrmrs/css-text-overflow.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-text-overflow/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-text-overflow/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
