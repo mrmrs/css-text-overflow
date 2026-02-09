@@ -13,7 +13,7 @@
 .t-double { text-overflow: "…" "…"; }
 .t-i { text-overflow: inherit; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .t-clip-s { text-overflow: clip; }
   .t-ellipsis-s { text-overflow: ellipsis; }
   .t-dots-s { text-overflow: "…"; }
@@ -22,7 +22,7 @@
   .t-i-s { text-overflow: inherit; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .t-clip-m { text-overflow: clip; }
   .t-ellipsis-m { text-overflow: ellipsis; }
   .t-dots-m { text-overflow: "…"; }
@@ -31,7 +31,7 @@
   .t-i-m { text-overflow: inherit; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .t-clip-l { text-overflow: clip; }
   .t-ellipsis-l { text-overflow: ellipsis; }
   .t-dots-l { text-overflow: "…"; }
