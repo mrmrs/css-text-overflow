@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-text-overflow.css');
+const srcFile = path.join(__dirname, 'src', 'text-overflow.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-text-overflow.css',
+  filename: 'text-overflow.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-text-overflow.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'text-overflow.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-text-overflow.css',
+  filename: 'text-overflow.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-text-overflow.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'text-overflow.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-text-overflow.css     ${unminified.length} bytes`);
-console.log(`  dist/css-text-overflow.min.css ${minified.length} bytes`);
+console.log(`  dist/text-overflow.css     ${unminified.length} bytes`);
+console.log(`  dist/text-overflow.min.css ${minified.length} bytes`);
