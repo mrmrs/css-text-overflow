@@ -1,111 +1,92 @@
-# css-text-overflow 0.0.6
+# css-text-overflow
 
-Css module of single purpose classes for text overflow
+Functional CSS for text-overflow
 
-#### Stats
+## Filesize
 
-357 | 24 | 24
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/text-overflow.css` | 1265 bytes |
+| `dist/text-overflow.min.css` | 927 bytes (217 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-text-overflow
-```
-
-#### With Git
-
-```
-git clone https://github.com/tachyons-css/css-text-overflow
+```sh
+npm install css-text-overflow
 ```
 
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-text-overflow";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
-```
-
-#### Using the CSS
-
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-text-overflow">
+<link rel="stylesheet" href="https://unpkg.com/css-text-overflow/dist/text-overflow.min.css">
 ```
 
-#### Development
+### Direct
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
-
-## The CSS
-
-```css
-/*
-   TEXT OVERFLOW
-*/
-.t-clip { text-overflow: clip; }
-.t-ellipsis { text-overflow: ellipsis; }
-.t-dots { text-overflow: "…"; }
-/* Two-value syntax: the first value describes the overflow at the left end of the line,
-                     the second at the right end. Directionality has no influence */
-.t-clip-ellipsis { text-overflow: clip ellipsis; }
-.t-double { text-overflow: "…" "…"; }
-.t-i { text-overflow: inherit; }
-@media screen and (min-width: 48em) {
- .t-clip-ns { text-overflow: clip; }
- .t-ellipsis-ns { text-overflow: ellipsis; }
- .t-dots-ns { text-overflow: "…"; }
- .t-clip-ellipsis-ns { text-overflow: clip ellipsis; }
- .t-double-ns { text-overflow: "…" "…"; }
- .t-i-ns { text-overflow: inherit; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .t-clip-m { text-overflow: clip; }
- .t-ellipsis-m { text-overflow: ellipsis; }
- .t-dots-m { text-overflow: "…"; }
- .t-clip-ellipsis-m { text-overflow: clip ellipsis; }
- .t-double-m { text-overflow: "…" "…"; }
- .t-i-m { text-overflow: inherit; }
-}
-@media screen and (min-width: 64em) {
- .t-clip-l { text-overflow: clip; }
- .t-ellipsis-l { text-overflow: ellipsis; }
- .t-dots-l { text-overflow: "…"; }
- .t-clip-ellipsis-l { text-overflow: clip ellipsis; }
- .t-double-l { text-overflow: "…" "…"; }
- .t-i-l { text-overflow: inherit; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-text-overflow/dist/text-overflow.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.t-clip` | `text-overflow: clip;` |
+| `.t-ellipsis` | `text-overflow: ellipsis;` |
+| `.t-dots` | `text-overflow: "…";` |
+| `.t-clip-ellipsis` | `text-overflow: clip ellipsis;` |
+| `.t-double` | `text-overflow: "…" "…";` |
+| `.t-i` | `text-overflow: inherit;` |
+| `.t-clip-s` | `text-overflow: clip;` |
+| `.t-ellipsis-s` | `text-overflow: ellipsis;` |
+| `.t-dots-s` | `text-overflow: "…";` |
+| `.t-clip-ellipsis-s` | `text-overflow: clip ellipsis;` |
+| `.t-double-s` | `text-overflow: "…" "…";` |
+| `.t-i-s` | `text-overflow: inherit;` |
+| `.t-clip-m` | `text-overflow: clip;` |
+| `.t-ellipsis-m` | `text-overflow: ellipsis;` |
+| `.t-dots-m` | `text-overflow: "…";` |
+| `.t-clip-ellipsis-m` | `text-overflow: clip ellipsis;` |
+| `.t-double-m` | `text-overflow: "…" "…";` |
+| `.t-i-m` | `text-overflow: inherit;` |
+| `.t-clip-l` | `text-overflow: clip;` |
+| `.t-ellipsis-l` | `text-overflow: ellipsis;` |
+| `.t-dots-l` | `text-overflow: "…";` |
+| `.t-clip-ellipsis-l` | `text-overflow: clip ellipsis;` |
+| `.t-double-l` | `text-overflow: "…" "…";` |
+| `.t-i-l` | `text-overflow: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.t-clip-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/text-overflow.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/text-overflow.css` — formatted
+- `dist/text-overflow.min.css` — minified
 
 ## License
 
-ISC
+MIT
